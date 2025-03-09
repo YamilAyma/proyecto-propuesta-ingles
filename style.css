@@ -8,17 +8,26 @@
 }
 
 :root{
-    --text-color: var(black);
+    --text-color: white;
+    --text-color1: black;
+    --bk-color1: black;
+    --bk-color2: #061254;
+    --bk-color3: white;
 }
 
-.dark-mode{
-    --text-color: var(rgb(255, 255, 255));
+.light-mode{ 
+    --text-color: black;
+    --text-color1: white;
+    --bk-color1: white;
+    --bk-color2: #b7c0f8;
+    --bk-color3: black;
 }
 
 a{
     text-decoration: none;
-    color: white;
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
@@ -29,7 +38,7 @@ a{
 
 .header{
     position: absolute;
-    background-color: black;
+    background-color: var(--bk-color1);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -38,11 +47,14 @@ a{
     max-height: 10dvh;
     top: 0;
     z-index: 100;
-    color: white;
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .titulo{
     margin-left: 3dvh;
+    color: var(--text-color);
+    font-size: 3rem;
 }
 
 .nav{
@@ -59,29 +71,40 @@ a{
     padding: 1dvh;
     border-radius: 10px;
     cursor: pointer;
-    color: white;
+    color: var(--text-color);
+    transition: background-color 0.3s,color 0.3s;
 }
 
 .itemListaNav:hover{
-    background-color: rgb(19, 2, 109);
+    background-color: var(--bk-color3);
+    color: var(--text-color1);
 }
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
 
 
 
-/* MAIN */
 
-.mainIndex{
+
+
+
+
+
+/* FORMULARIO */
+
+main{
     margin-top: 10dvh;
     min-height: 90dvh;
     box-sizing: border-box;
     padding: 1dvh;
-    background: radial-gradient(#010934, black);
+    /* background: radial-gradient(var(--bk-color2), var(--bk-color1)); */
+    background: linear-gradient(181deg, var(--bk-color1), var(--bk-color2));
+    
 }
 
-.ctnMainIndex{
+.ctnMainFormulario{
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -108,7 +131,7 @@ a{
 .campo{
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 2dvh;
 }
 
 label{
@@ -131,12 +154,12 @@ input:focus{
 .buttons{
     display: flex;
     flex-direction: row;
-    gap: 2vh;
+    gap: 2dvh;
     justify-content: space-around;
 }
 
 .btnIngresar{
-    padding: 1vh;
+    padding: 1dvh;
     color: white;
     background-color: green;
     border: none;
@@ -146,7 +169,7 @@ input:focus{
 }
 
 .btnSalir{
-    padding: 1vh;
+    padding: 1dvh;
     color: white;
     background-color: red;
     border: none;
@@ -182,3 +205,102 @@ input[type='file']{
     visibility: hidden;
     display: none;
 }
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+.ctnMainIndex{
+    display: flex;
+    flex-direction: column;
+    margin: 3dvh auto 0;
+    min-width: 70%;
+    max-width: 70%;
+    gap: 2dvh;
+}
+
+.subtituloIndex{
+    text-align: center;
+    color: var(--text-color);
+    padding: 1dvh;
+    border-radius: 15px;
+}
+
+.boxCtnOfertas{
+    display: grid;
+    width: 100%;
+    /* background-color: aqua; */
+    height: 76dvh;
+    border-radius: 15px;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    padding: 2vh;
+    gap: 3vh;
+    overflow-y: auto;
+}
+
+.ctnOfeta{
+    background-color: var(--bk-color1);
+    border-radius: 15px;
+    height: 400px;
+    color: var(--text-color);
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+    padding: 2dvh;
+    box-shadow: 0 0 10px 1px #380790;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOSOTROS */
+
+.ctnMainNosotros{
+    display: flex;
+    flex-direction: column;
+    margin: 10dvh auto;
+    min-width: 70%;
+    max-width: 70%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* SCROLL */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: var(--bk-color);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 10px;
+}
+/*  */
