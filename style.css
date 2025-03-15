@@ -48,7 +48,7 @@ a{
     top: 0;
     z-index: 100;
     color: var(--text-color);
-    transition: background-color 0.5s, color 0.5s;
+    transition:  color 1s;
 }
 
 .titulo{
@@ -72,7 +72,7 @@ a{
     border-radius: 10px;
     cursor: pointer;
     color: var(--text-color);
-    transition: background-color 0.3s,color 0.3s;
+    transition: background-color 0.7s,color 1s;
 }
 
 .itemListaNav:hover{
@@ -99,10 +99,41 @@ main{
     min-height: 90dvh;
     box-sizing: border-box;
     padding: 1dvh;
-    /* background: radial-gradient(var(--bk-color2), var(--bk-color1)); */
     background: linear-gradient(181deg, var(--bk-color1), var(--bk-color2));
     
 }
+
+
+.boxElegir{
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+    padding: 7dvh;
+    min-width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 5vh auto;
+    background-color: var(--bk-color3);
+    color: var(--bk-color1);
+    border-radius: 15px;
+    filter: drop-shadow( 0 0 3px var(--bk-color3));
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.btnAlumno{
+    padding: 2dvh 4dvh;
+    background-color: #54a5e5;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btnEmpresa{
+    padding: 2dvh 4dvh;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ff0057;
+}
+
 
 .ctnMainFormulario{
     display: flex;
@@ -110,17 +141,34 @@ main{
     margin: auto;
 }
 
-.login-register{
+.login{
     display: flex;
     flex-direction: column;
     gap: 5dvh;
     padding: 7dvh;
-    min-width: 40%;
+    min-width: 50%;
     box-sizing: border-box;
     margin: 5vh auto;
-    background-color: blue;
+    background-color: var(--bk-color3);
+    color: var(--bk-color1);
     border-radius: 15px;
-    filter: drop-shadow( 0 0 20px );
+    filter: drop-shadow( 0 0 3px var(--bk-color3));
+    transition: background-color 0.7s, color 0.7s;
+}
+
+.register{
+    display: none;
+    flex-direction: column;
+    gap: 5dvh;
+    padding: 7dvh;
+    min-width: 50%;
+    box-sizing: border-box;
+    margin: 5vh auto;
+    background-color: var(--bk-color3);
+    color: var(--bk-color1);
+    border-radius: 15px;
+    filter: drop-shadow( 0 0 3px var(--bk-color3));
+    transition: background-color 0.7s, color 0.7s;
 }
 
 .tituloForm{
@@ -131,7 +179,7 @@ main{
 .campo{
     display: flex;
     flex-direction: column;
-    gap: 2dvh;
+    gap: 1dvh;
 }
 
 label{
@@ -141,10 +189,11 @@ label{
 input{
     width: 100%;
     border: none;
-    padding: 1dvh;
     box-sizing: border-box;
     border-radius: 10px;
     font-size: 1rem;
+    background: none;
+    color: var(--text-color1);
 }
 
 input:focus{
@@ -176,16 +225,14 @@ input:focus{
     width: 100%;
     border-radius: 7px;
     text-align: center;
+    cursor: pointer;
 }
 
 .drctRegistrar{
     padding: 1dvh;
     text-align: center;
     cursor: pointer;
-}
-
-#form-registrer{
-    display: none;
+    color: var(--text-color1);
 }
 
 .campo p{
@@ -194,8 +241,7 @@ input:focus{
 
 .labelCV{
     font-size: 1rem;
-    background-color: white;
-    padding: 1dvh;
+    background: none;
     border-radius: 10px;
 }
 
