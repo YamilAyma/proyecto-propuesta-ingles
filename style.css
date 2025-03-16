@@ -291,7 +291,7 @@ input[type='file']{
     grid-template-columns: 1fr;
     box-sizing: border-box;
     padding: 2vh;
-    gap: 3vh;
+    gap: 5vh;
     overflow-y: auto;
 }
 
@@ -359,15 +359,84 @@ hr{
 
 
 
-/* NOSOTROS */
+/* CUENTA */
 
-.ctnMainNosotros{
+.ctnMainCuenta{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10dvh auto;
+    gap: 2dvh;
     min-width: 70%;
     max-width: 70%;
 }
+
+.ctnCuenta{
+    display: grid;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    padding: 2dvh;
+    gap: 2dvh;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    border-radius: 10px;
+}
+
+.ctnImgCuenta{
+    width: 100px;
+    
+}
+
+.ctnImgCuenta img{
+    width: 100%;
+}
+
+.datosCuentaUsuario{
+    width: 100%;
+}
+
+.otrosDatosCuentaUsuario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.otrosDatosCuentaUsuario p{
+    padding: 1dvh;
+    background: aliceblue;
+    text-align: center;
+    outline: solid 1px;
+}
+
+.btnOpcionesCuentas{
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+}
+
+.btnOpcionesCuentas p{
+    padding: 1dvh;
+    background: burlywood;
+    width: -webkit-fill-available;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+/* .ctnRegistros{
+    width: 100%;
+    height: 400px;
+    background-color: #380790;
+} */
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
