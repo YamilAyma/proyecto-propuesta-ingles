@@ -301,7 +301,7 @@ input[type='file']{
     margin: 0 2dvh;
     padding: 1dvh;
     border-radius: 15px;
-    background-color: #673ab7;
+    background-color: #293eb3;
 }
 
 .inputBuscador{
@@ -339,7 +339,7 @@ input[type='file']{
     transition: background-color 0.5s, color 0.5s;
     cursor: pointer;
     padding: 4dvh;
-    box-shadow: 0 0 10px 1px #380790;
+    box-shadow: 0 0 10px 1px #314092;
 }
 
 .blockOferta1{
@@ -351,7 +351,7 @@ input[type='file']{
 hr{
     border: none;
     height: 3px;
-    background: #380790;
+    background: #314092;
 }
 
 .ofertaCRT{
@@ -406,8 +406,8 @@ hr{
 
 .ctnCuenta{
     display: grid;
-    background-color: var(--bk-color2);
-    color: var(--text-color);
+    background-color: #0c154c;
+    color: white;
     box-sizing: border-box;
     padding: 3dvh;
     gap: 2dvh;
@@ -435,7 +435,7 @@ hr{
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
-    color: var(--text-color);
+    /* color: var(--text-color); */
 }
 
 .otrosDatosCuentaUsuario p{
@@ -456,7 +456,8 @@ hr{
 
 .btnOpcionesCuentas p{
     padding: 1dvh;
-    background: burlywood;
+    background-color: var(--bk-color1);
+    color: var(--text-color);
     width: -webkit-fill-available;
     text-align: center;
     border-radius: 10px;
@@ -472,11 +473,15 @@ hr{
     gap: 5dvh;
     height: 78dvh;
     border-radius: 15px;
-    background-color: #380790;
+    background-color: #0c154c;
     box-sizing: border-box;
     padding: 4dvh;
 
     overflow-y: auto;
+}
+
+.ctnRegistros .ctnOfeta{
+    box-shadow: none;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
