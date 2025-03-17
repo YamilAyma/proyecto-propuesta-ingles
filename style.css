@@ -276,11 +276,25 @@ input[type='file']{
     gap: 2dvh;
 }
 
-.subtituloIndex{
+.buscador{
+    display: flex;
     text-align: center;
-    color: var(--text-color);
+    margin: 0 2dvh;
     padding: 1dvh;
     border-radius: 15px;
+    background-color: #673ab7;
+}
+
+.inputBuscador{
+    color: white;
+}
+
+.btnBuscador{
+    display: flex;
+    border: none;
+    padding: 1dvh;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .boxCtnOfertas{
@@ -362,23 +376,23 @@ hr{
 /* CUENTA */
 
 .ctnMainCuenta{
-    display: flex;
-    flex-direction: row;
-    margin: 10dvh auto;
-    gap: 2dvh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 5dvh auto;
+    gap: 5dvh;
     min-width: 70%;
-    max-width: 70%;
+    max-width: 80%;
+    align-items: start;
 }
 
 .ctnCuenta{
     display: grid;
-    background-color: aquamarine;
+    background-color: var(--bk-color2);
+    color: var(--text-color);
     box-sizing: border-box;
-    padding: 2dvh;
+    padding: 3dvh;
     gap: 2dvh;
-    margin: auto;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     border-radius: 10px;
 }
@@ -402,11 +416,11 @@ hr{
     width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
+    color: var(--text-color);
 }
 
 .otrosDatosCuentaUsuario p{
     padding: 1dvh;
-    background: aliceblue;
     text-align: center;
     outline: solid 1px;
 }
@@ -432,11 +446,19 @@ hr{
 
 
 
-/* .ctnRegistros{
+.ctnRegistros{
     width: 100%;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5dvh;
+    height: 78dvh;
+    border-radius: 15px;
     background-color: #380790;
-} */
+    box-sizing: border-box;
+    padding: 4dvh;
+
+    overflow-y: auto;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -458,3 +480,55 @@ hr{
     border-radius: 10px;
 }
 /*  */
+
+
+@media (max-width: 600px) {
+
+    .ctnMainIndex{
+        max-width: 85%;
+    }
+
+    .ctnMainCuenta{
+        grid-template-columns: 1fr;
+        max-width: 85%;
+    }
+
+    .ctnImgCuenta{
+        width: 50px;
+    }
+
+    .ctnCuenta{
+        padding: 3dvh;
+        gap: 3dvh;
+    }
+
+    .ctnRegistros{
+        padding: 1dvh;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .ctnMainIndex{
+        max-width: 85%;
+    }
+
+    .ctnMainCuenta{
+        grid-template-columns: 1fr;
+        max-width: 85%;
+    }
+
+    .ctnImgCuenta{
+        width: 50px;
+    }
+
+    .ctnCuenta{
+        padding: 3dvh;
+        gap: 3dvh;
+    }
+
+    .ctnRegistros{
+        padding: 1dvh;
+    }
+}
