@@ -79,6 +79,25 @@ a{
     background-color: var(--bk-color3);
     color: var(--text-color1);
 }
+
+
+.btnMenu{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 1dvh;
+}
+
+.lineaMenu{
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--bk-color3);
+}
+
+
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -504,6 +523,28 @@ hr{
 
     .ctnRegistros{
         padding: 1dvh;
+    }
+
+
+
+    .btnMenu{
+        display: flex;
+    }
+
+    .listaNav{
+        display: none;
+        position: absolute;
+        top: 10dvh;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        background: linear-gradient(0deg, var(--bk-color2), var(--bk-color1));
+        padding: 2dvh;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .listaNav-act{
+        display: flex;
     }
 }
 

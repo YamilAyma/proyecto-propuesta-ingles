@@ -18,3 +18,11 @@ theme.addEventListener('click',()=>{
     localStorage.setItem('theme', isTheme ? 'light' : 'dark');      //Establece el nuevo valor del tema (oscuro o claro) segun el caso
 })
 
+
+const btnMenu = $('#btnMenu')
+const listaNav = $('#listaNav')
+
+
+btnMenu.addEventListener('click',()=>{
+    listaNav.classList.toggle('listaNav-act')
+});
