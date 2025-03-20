@@ -8,7 +8,7 @@
 }
 
 :root{
-    --text-color: white;
+    --text-color:   rgb(239, 255, 254);
     --text-color1: black;
     --bk-color1: black;
     --bk-color2: #061254;
@@ -21,7 +21,7 @@
     --text-color1: white;
     --bk-color1: white;
     --bk-color2: #71a3f9;
-    --bk-color3: black;
+    --bk-color3: rgb(89, 93, 213);
 }
 
 a{
@@ -77,12 +77,14 @@ a{
     border-radius: 10px;
     cursor: pointer;
     color: var(--text-color);
-    transition: background-color 0.7s,color 1s;
+    transition: background-color 0.7s, all ease-in-out .2s;
 }
 
 .itemListaNav:hover{
     background-color: var(--bk-color3);
     color: var(--text-color1);
+    transform: translateY(-3px);
+    scale: 1.02;
 }
 
 
