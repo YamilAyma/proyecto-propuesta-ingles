@@ -13,13 +13,14 @@
     --bk-color1: black;
     --bk-color2: #061254;
     --bk-color3: white;
+    --titulo-color: #4D6BFE;
 }
 
 .light-mode{ 
-    --text-color: black;
+    --text-color: #2d3642;
     --text-color1: white;
     --bk-color1: white;
-    --bk-color2: #b7c0f8;
+    --bk-color2: #71a3f9;
     --bk-color3: black;
 }
 
@@ -56,9 +57,10 @@ a{
 
 
 .titulo{
-    margin-left: 3dvh;
-    color: var(--text-color);
+    color: var(--titulo-color);
+    font-size: 3rem;
 }
+
 
 .nav{
     margin-right: 3dvh;
