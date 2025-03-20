@@ -1,8 +1,5 @@
 const $ = el=> document.querySelector(el)
 
-// MOSTRAR LINK DE LAYOUT: TEMPORAL
-alert("https://docs.google.com/presentation/d/1RYUpZ_nMpdnuzXjWah7ULUC8PH0RmuDxgIM0UtyyHmQ/edit?usp=sharing")
-
 
 // Modo oscuro
 const theme = $('#theme');

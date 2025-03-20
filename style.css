@@ -37,24 +37,27 @@ a{
 /* BARRA DE NAVEGACION */
 
 .header{
-    position: fixed;
     background-color: var(--bk-color1);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    min-height: 10dvh;
-    max-height: 10dvh;
-    top: 0;
-    z-index: 100;
     color: var(--text-color);
     transition:  color 1s;
 }
 
+.glass{
+    backdrop-filter: blur(21px) saturate(200%);
+    -webkit-backdrop-filter: blur(21px) saturate(200%);
+    background-color: rgba(133, 170, 241, 0.39);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+
 .titulo{
     margin-left: 3dvh;
     color: var(--text-color);
-    font-size: 3rem;
 }
 
 .nav{
@@ -114,7 +117,6 @@ a{
 /* FORMULARIO */
 
 main{
-    margin-top: 10dvh;
     min-height: 90dvh;
     box-sizing: border-box;
     padding: 1dvh;
@@ -326,6 +328,7 @@ input[type='file']{
     padding: 2vh;
     gap: 5vh;
     overflow-y: auto;
+    margin-block-end: 3rem;
 }
 
 .ctnOfeta{
