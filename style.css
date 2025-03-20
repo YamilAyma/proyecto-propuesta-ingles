@@ -209,6 +209,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1dvh;
+    font-size: 1.3rem;
 }
 
 label{
@@ -264,10 +265,6 @@ input:focus{
     color: var(--text-color2);
 }
 
-.campo p{
-    font-size: 1.3rem;
-}
-
 .labelCV{
     font-size: 1rem;
     background: none;
@@ -277,9 +274,12 @@ input:focus{
 input[type='file']{
     opacity: 0;
     font-size: 1rem;
-    visibility: hidden;
+    /* visibility: hidden; */
     display: none;
 }
+
+
+
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
