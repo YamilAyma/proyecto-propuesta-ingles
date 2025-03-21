@@ -1,7 +1,21 @@
-/* .fila{
+.fila{
     display: flex;
     flex-direction: row;
+    gap: .2rem;
 
     align-items: center;
     justify-content: center;
-} */
+}
+.justify-start{
+    justify-content: start;
+}
+.mt-4{
+    padding-top: 1rem;
+}
+.texto-data{
+    color: rgb(57, 80, 101);
+}
+
+.gap-4{
+    gap: 1rem;
+}

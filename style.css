@@ -10,6 +10,10 @@
     font-weight: 600;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --text-color:   rgb(239, 255, 254);
     --text-color1: black;
@@ -374,6 +378,7 @@ hr{
 
 .ofertaTitulo{
     font-size: 2rem;
+    color: #314092;
 }
 
 .blockOferta2{
@@ -389,8 +394,18 @@ hr{
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
+    background-color: var(--bk-color3);
+    color: var(--text-color1);
+    transition: all .3s ease-in-out;
+}
+.ofertaBtnPostularse:hover{
+    box-shadow: rgba(0, 0, 0, 0.574) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+
+.ofertaDescripcion{
+    color: #1f1b43;
+}
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 

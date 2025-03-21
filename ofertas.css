@@ -1,0 +1,12 @@
+.ofertaDistrito::before{
+    content: "";
+}
+
+
+.ofertaCarrera::before{
+    content: "Carrera: ";
+}
+
+.ofertaTipoConvenio::before{
+    content: "Convenio: ";
+}
