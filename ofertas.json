@@ -1,0 +1,63 @@
+[
+    {
+        "titulo": "Prácticas profesionales en marketing digital para estudiantes",
+        "distrito": "Lima",
+        "fechaInicio": "01/05/2025",
+        "fechaFin": "01/11/2025",
+        "estado": "Activo",
+        "modalidad": "Remota",
+        "carrera": "Marketing, Publicidad, Comunicación",
+        "numVacantes": 5,
+        "tipoConvenio": "Universitario",
+        "descripcion": "Estamos buscando estudiantes apasionados por el marketing digital para unirse a nuestro equipo y aprender sobre estrategias de marketing online, análisis de datos, y gestión de campañas publicitarias. Si eres proactivo y tienes ganas de aprender, ¡esta oportunidad es para ti!"
+    },
+    {
+        "titulo": "Prácticas en desarrollo de software para estudiantes de ingeniería",
+        "distrito": "San Isidro",
+        "fechaInicio": "15/05/2025",
+        "fechaFin": "15/08/2025",
+        "estado": "Activo",
+        "modalidad": "Presencial",
+        "carrera": "Ingeniería en Sistemas, Ciencias de la Computación",
+        "numVacantes": 3,
+        "tipoConvenio": "Internado",
+        "descripcion": "Buscamos estudiantes de ingeniería con conocimientos básicos en programación que estén interesados en desarrollar aplicaciones de software y trabajar con tecnologías modernas. Si estás listo para poner en práctica tus conocimientos y aprender en un entorno profesional, esta es tu oportunidad."
+    },
+    {
+        "titulo": "Prácticas en desarrollo de software para estudiantes de ingeniería",
+        "distrito": "San Isidro",
+        "fechaInicio": "15/05/2025",
+        "fechaFin": "15/08/2025",
+        "estado": "Activo",
+        "modalidad": "Presencial",
+        "carrera": "Ingeniería en Sistemas, Ciencias de la Computación",
+        "numVacantes": 3,
+        "tipoConvenio": "Internado",
+        "descripcion": "Buscamos estudiantes de ingeniería con conocimientos básicos en programación que estén interesados en desarrollar aplicaciones de software y trabajar con tecnologías modernas. Si estás listo para poner en práctica tus conocimientos y aprender en un entorno profesional, esta es tu oportunidad."
+    },
+
+    {
+        "titulo": "Prácticas en desarrollo de software para estudiantes de ingeniería",
+        "distrito": "San Isidro",
+        "fechaInicio": "15/05/2025",
+        "fechaFin": "15/08/2025",
+        "estado": "Activo",
+        "modalidad": "Presencial",
+        "carrera": "Ingeniería en Sistemas, Ciencias de la Computación",
+        "numVacantes": 3,
+        "tipoConvenio": "Internado",
+        "descripcion": "Buscamos estudiantes de ingeniería con conocimientos básicos en programación que estén interesados en desarrollar aplicaciones de software y trabajar con tecnologías modernas. Si estás listo para poner en práctica tus conocimientos y aprender en un entorno profesional, esta es tu oportunidad."
+    },
+    {
+        "titulo": "Prácticas en desarrollo de software para estudiantes de ingeniería",
+        "distrito": "San Isidro",
+        "fechaInicio": "15/05/2025",
+        "fechaFin": "15/08/2025",
+        "estado": "Activo",
+        "modalidad": "Presencial",
+        "carrera": "Ingeniería en Sistemas, Ciencias de la Computación",
+        "numVacantes": 3,
+        "tipoConvenio": "Internado",
+        "descripcion": "Buscamos estudiantes de ingeniería con conocimientos básicos en programación que estén interesados en desarrollar aplicaciones de software y trabajar con tecnologías modernas. Si estás listo para poner en práctica tus conocimientos y aprender en un entorno profesional, esta es tu oportunidad."
+    }
+]

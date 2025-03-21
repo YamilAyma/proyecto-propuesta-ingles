@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +18,11 @@
         <div class="fila">
             <img src="img/logo.png" width="50%" height="50%" alt="Logo de SenaLink">
             <h1 class="titulo">SenaLink</h1>
-            
         </div>
         <nav class="nav">
             <ul class="listaNav" id="listaNav" style="margin-left: 550%;">
                 <a href="index.html" class="itemListaNav">Home</a>
                 <a href="login.html" class="itemListaNav">Login</a>
-
             </ul>
         </nav>
         <div class="btnMenu" id="btnMenu">
@@ -36,70 +34,25 @@
             <li class="itemListaNav" id="theme">
                 <i class="fas fa-moon fa-2x"></i> 
             </li> 
-            
         </div>
     </header>
 
-
     <main>
         <div class="ctnMainIndex">
+            <!-- Buscador -->
             <span class="buscador">
-                <!-- <h2>Bienvenido USUARIO</h2> -->
-                <input type="text" class="inputBuscador">
-                <button class="btnBuscador"><span class="material-symbols-outlined">
-                    search
-                    </span>
+                <input type="text" id="inputBusqueda" class="inputBuscador" placeholder="Buscar por ciudad o carrera">
+                <button id="btnBuscar" class="btnBuscador">
+                    <span class="material-symbols-outlined">search</span>
                 </button>
             </span>
+            <script src="index.js"></script>
+            <!-- Contenedor de ofertas (Se llenará dinámicamente con JavaScript) -->
             <div class="boxCtnOfertas">
-                <section class="ctnOfeta">
-                    <span class="blockOferta1">
-                        <h4 class="ofertaTitulo">Prácticas profesionales en marketing digital para estudiantes</h4>
-                        <p class="ofertaDistrito">Distrito: Lima</p>
-                    </span>
-                    <button class="ofertaBtnPostularse">Postularse</button>
-                    <hr>
-                    <span class="blockOferta2">
-                        <div class="ofertaCRT">
-                            <p class="ofertaFecha">Fecha de inicio: 01/05/2025 - Fecha de fin: 01/11/2025</p>
-                        </div>
-                        <p class="ofertaEstado">Activo</p>
-                        <p class="ofertaModalidad">Remota</p>
-                        <p class="ofertaCarrera">Carrera: Marketing, Publicidad, Comunicación</p>
-                        <p class="ofertaNumVacantes">5 vacantes</p>
-                        <div class="ofertaCRT">
-                            <p class="ofertaTipoConvenio">Convenio: Universitario</p>
-                        </div>
-                    </span>
-                    <span class="blockOferta3">
-                        <p class="ofertaDescripcion">Estamos buscando estudiantes apasionados por el marketing digital para unirse a nuestro equipo y aprender sobre estrategias de marketing online, análisis de datos, y gestión de campañas publicitarias. Si eres proactivo y tienes ganas de aprender, ¡esta oportunidad es para ti!</p>
-                    </span>
-                </section>
-            
-                <section class="ctnOfeta">
-                    <span class="blockOferta1">
-                        <h4 class="ofertaTitulo">Prácticas en desarrollo de software para estudiantes de ingeniería</h4>
-                        <p class="ofertaDistrito">Distrito: San Isidro</p>
-                    </span>
-                    <button class="ofertaBtnPostularse">Postularse</button>
-                    <hr class="hr">
-                    <span class="blockOferta2">
-                        <div class="ofertaCRT">
-                            <p class="ofertaFecha">Fecha de inicio: 15/05/2025 - Fecha de fin: 15/08/2025</p>
-                        </div>
-                        <p class="ofertaEstado">Activo</p>
-                        <p class="ofertaModalidad">Presencial</p>
-                        <p class="ofertaCarrera">Carrera: Ingeniería en Sistemas, Ciencias de la Computación</p>
-                        <p class="ofertaNumVacantes">3 vacantes</p>
-                        <p class="ofertaTipoConvenio">Convenio: Internado</p>
-                    </span>
-                    <span class="blockOferta3">
-                        <p class="ofertaDescripcion">Buscamos estudiantes de ingeniería con conocimientos básicos en programación que estén interesados en desarrollar aplicaciones de software y trabajar con tecnologías modernas. Si estás listo para poner en práctica tus conocimientos y aprender en un entorno profesional, esta es tu oportunidad.</p>
-                    </span>
-                </section>
+                <p>Cargando ofertas...</p>
             </div>
-            
         </div>
     </main>
+
 </body>
 </html>
