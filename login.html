@@ -13,7 +13,7 @@
 
     <main class="mainIndex">
         <div class="ctnMainIndex">
-            <form action="cuenta.html" class="login" id="form-login">
+            <form action="" class="login" id="form-login">
                 <h2 class="tituloForm"></h2>
                 <span class="campo">
                     <label for="user">DNI: </label>
@@ -24,14 +24,37 @@
                     <input type="password" name="password" id="password" required placeholder="Ingrese su contraseña">
                 </span>
                 <div class="buttons">
-                    <button class="btnIngresar">Ingresar</button>
+                    <button class="btnIngresar" id="login">Ingresar</button>
                     <a href="index.html" class="btnSalir">Salir</a>
                 </div>
                 <span style="text-align: center;">
                     <a href="registrar.html" class="drctRegistrar">¿Aun no tienes una cuenta? Registrate!</a>
                 </span>
-            </form>
+            </div>
         </div>
     </main>
+
+    <script>
+        const btnLogin = document.getElementById('login')
+        
+        btnLogin.addEventListener('click',(e)=>{
+            e.preventDefault()
+            // Tomar los valores
+            const dni = document.getElementById('user').value
+            const contrasena = document.getElementById('password').value
+
+            // Crear el usuario
+            const usuario = {
+                dni,
+                contrasena                
+            }
+            // Almacenarlo en localStorage
+            localStorage.setItem('usuario', JSON.stringify(usuario))
+            
+            window.location.replace("/cuenta.html")
+        })
+
+
+    </script>
 </body>
 </html>
