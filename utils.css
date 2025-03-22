@@ -29,3 +29,9 @@
 .gap-4{
     gap: 1rem;
 }
+.texto-secundario{
+    color: var(--texto-secundario);
+}
+.texto-primario{
+    color: var(--texto-primario);
+}
