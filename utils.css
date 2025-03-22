@@ -19,6 +19,9 @@
 .justify-start{
     justify-content: start;
 }
+.invisible{
+    display: none;
+}
 .mt-4{
     padding-top: 1rem;
 }

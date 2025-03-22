@@ -1,5 +1,19 @@
 const $ = el=> document.querySelector(el)
 
+// Ocultar los elementos de Login/Registrarse si ya hay un usuario en la sesion
+const usuario = localStorage.getItem('usuario')
+if(!usuario){
+    // Ocultar elementos inaccesibles para el publico general
+    for(let elemento of document.querySelectorAll(".acceso-usuario")){
+        console.log(elemento)
+        elemento.classList.toggle("invisible")
+    }
+    // Ocultar elementos que no necesita ver el usuario porque ya inició sesión
+    for(let elemento of document.querySelectorAll(".sin-login")){
+        console.log(elemento)
+        elemento.classList.toggle("invisible")
+    }
+}
 
 // Modo oscuro
 const theme = $('#theme');
