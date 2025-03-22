@@ -8,13 +8,17 @@ const theme = $('#theme');
 // Al momento de cargar la pagina se establece el modo que se guarda en el LocalStorage
 document.addEventListener("DOMContentLoaded", () => {
     const getTheme = localStorage.getItem('theme');         //Obtenemos el valor del item'Tema' que alberga que tema tiene
+    console.log(getTheme)
     if (getTheme === 'light') {                             //Condicional para establecer el tema
         document.body.classList.add('light-mode');
+    }else{
+        document.body.classList.remove('light-mode');
     }
 });
 
 // Al hacer click al boton tema
 theme.addEventListener('click',()=>{
+    console.log("SKSKSKSKSK")
     const isTheme = document.body.classList.toggle('light-mode');   //Agrega o quita el tema oscuro o claro (si ya lo tiene lo quita - si no lo agrega)
     localStorage.setItem('theme', isTheme ? 'light' : 'dark');      //Establece el nuevo valor del tema (oscuro o claro) segun el caso
 })
