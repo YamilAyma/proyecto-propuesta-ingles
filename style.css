@@ -45,6 +45,7 @@ html{
     --texto-secundario: #5b599e;
     --texto-primario: #4D6BFE;
 
+    /* Colores que cambian según el tema,EJ: blanco para tema oscuro, azul para tema claro */
     --blanco-azul: #5b6ede;    
     --azul-blanco: #fff;
 
