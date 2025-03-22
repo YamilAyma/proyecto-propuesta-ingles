@@ -36,6 +36,10 @@ a{
     text-decoration: none;
 }
 
+body{
+    height: 100vh;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -117,9 +121,163 @@ a{
 
 
 
+/* LANDING PAGE */
+header{
+    text-align: center;
+}
+.cta{
+    font-size: 3.5rem;
+    background: #3D53CF;
+    background: linear-gradient(to bottom left, #3D53CF 0%, #83B7CF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.cta-descripcion{
+    font-size: 1rem;
+    background: #2C9CCF;
+    background: linear-gradient(to bottom left, #2C9CCF 0%, #6A8ECF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cta-boton{
+    background-color: var(--buscador-color);
+    border-radius: 1rem;
+    border: none;
+    margin-block: 1rem ;
+    font-size: 1.2rem;
+    color: var(--text-color1);
+    box-shadow: rgba(50, 50, 93, 0.713) 0px 50px 100px -20px, rgba(0, 0, 0, 0.672) 0px 30px 60px -30px;
+    padding: .3rem .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.cta-boton:hover{
+    transform: rotate(-2deg);
+    scale: 1.1;
+}
+.cta-boton:hover::before, .cta-boton:hover::after{
+    content: "⭐";
+}
+
+/*----*/
+.cta-boton-secundario{
+    background-color: var(--text-color1);
+    border-radius: 1rem;
+    border: none;
+    margin-block: 1rem ;
+    font-size: 1.2rem;
+    color: var(--buscador-color);
+    box-shadow: rgba(50, 50, 93, 0.713) 0px 50px 100px -20px, rgba(0, 0, 0, 0.672) 0px 30px 60px -30px;
+    padding: .4rem .5rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.cta-boton-secundario:hover{
+    transform: rotate(2deg);
+    background-color: #f3f3f3;
+    scale: 1.1;
+}
+.cta-boton-secundario:hover::before, .cta-boton-secundario:hover::after{
+    content: "📚";
+}
 
 
 
+
+.titulo-gradiente{
+    background: #75B2CF;
+    background: linear-gradient(to bottom left, #75B2CF 0%, #0B3BCB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titulo-descripcion{
+    color: var(--text-color);
+}
+.lista-pasos{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+#landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+/* CARRUSEL DE TESTIMONIOS*/
+
+.opinion {
+    background: var(--buscador-color);
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.opinion p {
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+.perfil {
+    width: 50px;  
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #ccc; 
+    margin-bottom: 10px;
+}
+.scroll-container {
+    width: 75vw;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.scroll-wrapper {
+    display: flex;
+    width: max-content;
+    animation: scrollOpinions 20s linear infinite;
+}
+@keyframes scrollOpinions {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+/*  */
+.content-landing{
+    display: flex;
+}
+.content-img{
+    max-width: 25%;
+    height: auto;
+    object-fit: cover   ;
+}
+
+.card{
+    background-color: #FFF;
+    border-radius: 1rem;
+
+}
+
+/* ------------------------------------------------------ */
 
 
 

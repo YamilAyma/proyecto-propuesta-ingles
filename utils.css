@@ -6,6 +6,16 @@
     align-items: center;
     justify-content: center;
 }
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    align-items: center;
+    justify-content: center;
+}
+
 .justify-start{
     justify-content: start;
 }
