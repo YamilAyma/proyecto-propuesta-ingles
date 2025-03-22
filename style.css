@@ -32,6 +32,7 @@ html{
 
     --blanco-azul: #fff;    
     --azul-blanco: #5b6ede;
+    --celeste100-azul100: #7c8de9;
 }
 
 .light-mode{ 
@@ -44,6 +45,8 @@ html{
     --bg-terciario: #ffffff;
     --texto-secundario: #5b599e;
     --texto-primario: #4D6BFE;
+    --celeste100-azul100: #4d5aa0;
+
 
     /* Colores que cambian según el tema,EJ: blanco para tema oscuro, azul para tema claro */
     --blanco-azul: #5b6ede;    
@@ -435,6 +438,7 @@ main{
     gap: 5dvh;
     padding: 7dvh;
     min-width: 50%;
+    align-items: center;
     box-sizing: border-box;
     margin: 5vh auto;
     background-color: var(--bk-color1);
@@ -443,6 +447,7 @@ main{
     filter: drop-shadow( 0 0 3px var(--bk-color2));
     transition: background-color 0.7s, color 0.7s;
 }
+
 
 .tituloForm{
     text-align: center;
@@ -467,7 +472,7 @@ input{
     border-radius: 10px;
     font-size: 1rem;
     background: none;
-    color: var(--text-color1);
+    color: var(--celeste100-azul100);
 }
 
 input:focus{
