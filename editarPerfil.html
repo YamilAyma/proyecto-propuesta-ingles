@@ -1,3 +1,10 @@
+<!-- 
+ 
+COPIA DE registrar.html, con ello se cargan los datos almacenados en memoria, para
+el usuario, tanto sea ESTUDIANTE/EMPRESA
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,37 +13,35 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utils.css" />
     <script src="script.js" defer></script>
-    <script src="changeRegister.js" defer></script>
+    <script src="editarPerfil.js" defer></script>
     <script src="utils.js"></script>
+    <script src="restriccionCuenta.js"></script> <!-- PARA EVITAR QUE PUEDA ACCEDER -->
     <title>SenaLink</title>
   </head>
   <body>
     <header>
       <main class="mainIndex">
         <div class="ctnMainIndex">
-          <section class="boxElegir" id="boxElegir">
-            <p class="btnAlumno" id="btnAlumno">Registrar como Alumno</p>
-            <p class="btnEmpresa" id="btnEmpresa">Registrar como Empresa</p>
-          </section>
+          
 
-          <form action="" class="register" id="form_registrerAlumnos">
-            <h2 class="titulo">Registrar Alumnos</h2>
+          <form action="" class="form" id="formPracticante">
+            <h2 class="titulo">Editar mis datos</h2>
             <span class="campo">
               <label for="id">DNI: </label>
               <input
+                class="texto-secundario"
                 type="text"
                 name="id"
                 id="id"
-                required
-                placeholder="Ingrese su id"
+                readonly
               />
             </span>
             <span class="campo">
               <label for="name">Nombre: </label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="nombre"
+                id="nombre"
                 required
                 placeholder="Ingrese su nombre completo"
               />
@@ -111,7 +116,6 @@
                   </g>
                 </g>
               </svg> </label>
-              <input type="file" name="cv" id="cv" required />
 
       
             </span>
@@ -150,44 +154,39 @@
             </span>
 
             <span class="campo">
-              <label for="email">Correo: </label>
+              <label for="correo">Correo: </label>
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="correo"
+                id="correo"
                 required
                 placeholder="Ingrese su correo"
               />
-            </span>
+            </span> 
             <span class="campo">
-              <label for="password">Contraseña: </label>
+              <label for="contrasena">Contraseña: </label>
               <input
                 type="password"
-                name="password"
-                id="password"
+                name="contrasena"
+                id="contrasena"
                 required
                 placeholder="Ingrese su contraseña"
               />
             </span>
             <div class="buttons">
-              <button class="btnIngresar">Ingresar</button>
-              <p class="btnSalir" id="btnSalirAlumno">Salir</p>
+              <button class="btnIngresar" onclick="guardarDatosPracticante()">Guardar datos</button>
+              <a class="btnSalir" href="index.html">Salir</a>
             </div>
-            <span style="text-align: center">
-              <a href="login.html" class="drctRegistrar"
-                >¿Ya tienes una cuenta? Inicia sesión!</a
-              >
-            </span>
           </form>
 
-          <form action="" class="register" id="form_registrerEmpresas">
+          <form action="" class="form" id="formEmpresa">
             <h2 class="tituloForm">Registrar Empresas</h2>
             <span class="campo">
-              <label for="ruc">RUC: </label>
+              <label for="id">RUC: </label>
               <input
                 type="text"
-                name="ruc"
-                id="ruc"
+                name="id"
+                id="id"
                 required
                 placeholder="Ingrese su RUC"
               />
@@ -196,8 +195,8 @@
               <label for="razon_social">Razon Social: </label>
               <input
                 type="text"
-                name="razon_social"
-                id="razon_social"
+                name="razonSocial"
+                id="razonSocial"
                 required
                 placeholder="Ingrese su razon social"
               />
@@ -269,36 +268,31 @@
             </span>
 
             <span class="campo">
-              <label for="email">Correo: </label>
+              <label for="correo">Correo: </label>
               <input
                 type="email"
-                name="email"
-                id="email"
+                name="correo"
+                id="correo"
                 required
                 placeholder="Ingrese su correo"
               />
             </span>
 
             <span class="campo">
-              <label for="password">Contraseña: </label>
+              <label for="contrasena">Contraseña: </label>
               <input
                 type="password"
-                name="password"
-                id="password"
+                name="contrasena"
+                id="contrasena"
                 required
                 placeholder="Ingrese su contraseña"
               />
             </span>
 
             <div class="buttons">
-              <button class="btnIngresar">Ingresar</button>
-              <p class="btnSalir" id="btnSalirEmpresa">Salir</p>
+              <button class="btnIngresar" onclick="guardarDatosEmpresa()">Guardar datos</button>
+              <a class="btnSalir" href="index.html">Salir</a>
             </div>
-            <span style="text-align: center">
-              <a href="login.html" class="drctRegistrar"
-                >¿Ya tienes una cuenta? Inicia sesión!</a
-              >
-            </span>
           </form>
         </div>
       </main>

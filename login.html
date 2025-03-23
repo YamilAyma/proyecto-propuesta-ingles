@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
     <script src="script.js" defer></script>
+    <script src="utils.js"></script>
     <title>SenaLink</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
             <form action="" class="login" id="form-login">
                 <h2 class="tituloForm"></h2>
                 <span class="campo">
-                    <label for="user">DNI: </label>
-                    <input type="text" name="user" id="user" required placeholder="Ingrese su ID (sin los 2 ceros inciales)">
+                    <label for="user">ID: </label>
+                    <input type="text" name="id" id="id" required placeholder="Ingrese su ID de usuario">
                 </span>
                 <span class="campo">
                     <label for="password">Contraseña: </label>
@@ -40,12 +41,12 @@
         btnLogin.addEventListener('click',(e)=>{
             e.preventDefault()
             // Tomar los valores
-            const dni = document.getElementById('user').value
+            const id = document.getElementById('id').value
             const contrasena = document.getElementById('password').value
 
             // Crear el usuario
             const usuario = {
-                dni,
+                id,
                 contrasena                
             }
             // Almacenarlo en localStorage

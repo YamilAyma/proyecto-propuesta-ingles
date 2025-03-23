@@ -439,7 +439,24 @@ main{
     filter: drop-shadow( 0 0 3px var(--bk-color2));
     transition: background-color 0.7s, color 0.7s;
 }
-
+.form{
+    flex-direction: column;
+    gap: 5dvh;
+    padding: 7dvh;
+    min-width: 50%;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 5vh auto;
+    background-color: var(--bk-color1);
+    color: var(--bk-color3);
+    border-radius: 15px;
+    filter: drop-shadow( 0 0 3px var(--bk-color2));
+    transition: background-color 0.7s, color 0.7s;
+}
+.form input{
+    text-align: center;
+    border-bottom: var(--bg-secundario) 2px solid;
+}
 .register{
     display: none;
     flex-direction: column;
@@ -467,6 +484,8 @@ main{
     flex-direction: column;
     gap: 1dvh;
     font-size: 1.3rem;
+    margin-block: 1.3rem;
+    
 }
 
 label{
@@ -497,7 +516,7 @@ input:focus{
 .btnIngresar{
     padding: 1dvh;
     color: white;
-    background-color: green;
+    background-color: rgb(57, 172, 57);
     border: none;
     border-radius: 7px;
     width: 100%;
@@ -507,7 +526,7 @@ input:focus{
 .btnSalir{
     padding: 1dvh;
     color: white;
-    background-color: red;
+    background-color: rgb(214, 54, 54);
     border: none;
     width: 100%;
     border-radius: 7px;
