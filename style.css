@@ -33,6 +33,9 @@ html{
     --blanco-azul: #fff;    
     --azul-blanco: #5b6ede;
     --celeste100-azul100: #7c8de9;
+    --azul100-celeste100: #4d5aa0;
+
+
 }
 
 .light-mode{ 
@@ -46,6 +49,8 @@ html{
     --texto-secundario: #5b599e;
     --texto-primario: #4D6BFE;
     --celeste100-azul100: #4d5aa0;
+    --azul100-celeste100: #7c8de9;
+
 
 
     /* Colores que cambian según el tema,EJ: blanco para tema oscuro, azul para tema claro */
@@ -625,7 +630,10 @@ hr{
 
 .ofertaTitulo{
     font-size: 2rem;
-    color: #314092;
+    color: var(--blanco-azul);
+}
+.ctnOfeta p{
+    color: var(--celeste100-azul100);
 }
 
 .blockOferta2{
@@ -680,7 +688,7 @@ hr{
 
 .ctnCuenta{
     display: grid;
-    background-color: #0c154c;
+    background-color: var(--buscador-color);
     color: white;
     box-sizing: border-box;
     padding: 3dvh;
@@ -698,6 +706,7 @@ hr{
 .ctnImgCuenta img{
     width: 100%;
 }
+
 
 .datosCuentaUsuario{
     width: 100%;
@@ -746,8 +755,15 @@ hr{
     flex-direction: column;
     gap: 5dvh;
     height: 78dvh;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
     border-radius: 15px;
-    background-color: #0c154c;
     box-sizing: border-box;
     padding: 4dvh;
 
