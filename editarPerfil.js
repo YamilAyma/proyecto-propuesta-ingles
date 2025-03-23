@@ -1,36 +1,8 @@
 // Carga el usuario :: Obj JSON
 // const usuario = JSON.parse(localStorage.getItem('usuario'))
 
-function guardarDatosEmpresa(){
-    const formEmpresa = document.getElementById("formEmpresa");
 
-    formEmpresa.addEventListener("submit", (event) => {
-      event.preventDefault(); // Evita que se recargue la página
-    
-      const formData = new FormData(formEmpresa);
-      const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
-    
-      localStorage.setItem('usuario', JSON.stringify(datos))
-    //   Redirigir a la vista de acceso
-        reemplazarUrl('index.html')
-    });    
-}
 
-function guardarDatosPracticante(){
-    const formEmpresa = document.getElementById("formPracticante");
-
-    formEmpresa.addEventListener("submit", (event) => {
-      event.preventDefault(); // Evita que se recargue la página
-    
-      const formData = new FormData(formEmpresa);
-      const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
-    
-      localStorage.setItem('usuario', JSON.stringify(datos))
-    //   Redirigir a la vista de acceso
-      reemplazarUrl('index.html')
-    });    
-
-}
 
 
 
@@ -67,24 +39,6 @@ const rol = usuario['rol']
 const formPracticante = document.getElementById('formPracticante')
 const formEmpresa = document.getElementById('formEmpresa')
 
-// Guardar los datos 
-formEmpresa.addEventListener("submit", (event) => {
-    event.preventDefault(); // Evita que se recargue la página
-  
-    const formData = new FormData(formEmpresa);
-    const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
-  
-    localStorage.setItem('usuario', JSON.stringify(datos))
-  });  
-
-formPracticante.addEventListener("submit", (event) => {
-    event.preventDefault(); // Evita que se recargue la página
-
-    const formData = new FormData(formEmpresa);
-    const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
-
-    localStorage.setItem('usuario', JSON.stringify(datos))
-}); 
 
 // Ocultar formulario que no sea para el usuario
 // Carga de datos
@@ -92,7 +46,7 @@ if(rol == "practicante"){
     formEmpresa.remove()
     const dniInput = document.getElementById("id");
     const nombreInput = document.getElementById("nombre");
-    const apellidoInput = document.getElementById("apellido");
+    const apellidoInput = document.getElementById("apellidos");
     const telefonoInput = document.getElementById("telefono");
     const idCarreraInput = document.getElementById("idCarrera");
     const sedeInput = document.getElementById("sede");

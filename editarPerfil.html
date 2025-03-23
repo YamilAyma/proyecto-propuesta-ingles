@@ -34,6 +34,7 @@ el usuario, tanto sea ESTUDIANTE/EMPRESA
                 name="id"
                 id="id"
                 readonly
+                placeholder=""
               />
             </span>
             <span class="campo">
@@ -48,11 +49,11 @@ el usuario, tanto sea ESTUDIANTE/EMPRESA
             </span>
 
             <span class="campo">
-              <label for="apellido">Apellidos: </label>
+              <label for="apellidos">Apellidos: </label>
               <input
                 type="text"
-                name="apellido"
-                id="apellido"
+                name="apellidos"
+                id="apellidos"
                 required
                 placeholder="Ingrese sus apellidos completo"
               />
@@ -174,16 +175,17 @@ el usuario, tanto sea ESTUDIANTE/EMPRESA
               />
             </span>
             <div class="buttons">
-              <button class="btnIngresar" onclick="guardarDatosPracticante()">Guardar datos</button>
+              <button class="btnIngresar" onclick="guardarDatosUsuario('formPracticante', 'practicante')">Guardar datos</button>
               <a class="btnSalir" href="index.html">Salir</a>
             </div>
           </form>
 
           <form action="" class="form" id="formEmpresa">
-            <h2 class="tituloForm">Registrar Empresas</h2>
+            <h2 class="tituloForm">Editar datos de empresa</h2>
             <span class="campo">
               <label for="id">RUC: </label>
               <input
+                class="texto-secundario"
                 type="text"
                 name="id"
                 id="id"
@@ -290,7 +292,7 @@ el usuario, tanto sea ESTUDIANTE/EMPRESA
             </span>
 
             <div class="buttons">
-              <button class="btnIngresar" onclick="guardarDatosEmpresa()">Guardar datos</button>
+              <button class="btnIngresar" onclick="guardarDatosUsuario('formEmpresa', 'empresa')">Guardar datos</button>
               <a class="btnSalir" href="index.html">Salir</a>
             </div>
           </form>

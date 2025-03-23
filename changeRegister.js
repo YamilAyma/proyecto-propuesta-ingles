@@ -24,12 +24,10 @@ btnEmpresa.addEventListener('click',()=>{
 btnSalirAlumno.addEventListener('click', () => {
     boxElegir.style.display = 'flex';
     formAlumnos.style.display = 'none';
-    console.log('Saliendo del formulario de alumnos');
 });
 
 btnSalirEmpresa.addEventListener('click', () => {
     boxElegir.style.display = 'flex';
     formEmpresas.style.display = 'none';
-    console.log('Saliendo del formulario de empresas');
 });
 

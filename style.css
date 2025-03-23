@@ -408,6 +408,7 @@ main{
     padding: 2dvh 4dvh;
     background-color: #54a5e5;
     cursor: pointer;
+    color: var(--bg-blanco);
     border-radius: 10px;
 }
 
@@ -415,6 +416,7 @@ main{
     padding: 2dvh 4dvh;
     border-radius: 10px;
     cursor: pointer;
+    color: var(--bg-blanco);
     background-color: #ff0057;
 }
 
