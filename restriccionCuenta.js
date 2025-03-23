@@ -4,5 +4,5 @@
 const usuario = localStorage.getItem('usuario')
 if(!usuario){
     // Hacia el home
-    window.location.replace("/login.html")
+    reemplazarUrl("login.html")
 }
