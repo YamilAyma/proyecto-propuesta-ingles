@@ -11,6 +11,8 @@ function guardarDatosEmpresa(){
       const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
     
       localStorage.setItem('usuario', JSON.stringify(datos))
+    //   Redirigir a la vista de acceso
+        reemplazarUrl('index.html')
     });    
 }
 
@@ -24,6 +26,8 @@ function guardarDatosPracticante(){
       const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
     
       localStorage.setItem('usuario', JSON.stringify(datos))
+    //   Redirigir a la vista de acceso
+      reemplazarUrl('index.html')
     });    
 
 }
