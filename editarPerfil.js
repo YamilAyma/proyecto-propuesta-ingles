@@ -6,33 +6,7 @@
 
 
 
-// Estos objetos fueron usados para probar el funcionamiento, son registros del usuario
-const usuarioMock = {
-    id: '101010',
-    nombre: "Practicante 01",
-    apellidos: "0100101",
-    // curriculumn: "PDF",
-    telefono: '292992',
-    idCarrera: '1000',
-    sede: 'Independencia',
-    correo: "practicante0101@gmial.com",
-    contrasena: "1010admin20202",
-    rol: "practicante"
-}
 
-const empresaMock = {
-    id: "10101",
-    razonSocial: "SENALINK",
-    descripcion: "Proyecto ...",
-    provincia: "Lima",
-    distrito: "Lima",
-    departamento: "Lima",
-    sector: "Tecnologia",
-    telefono: "999888777",
-    correo: "senalinktec@mail.com",
-    contrasena: "299291",
-    rol: "empresa"
-}
 // Obtener el rol para presentar el formulario con los datos cargados
 const rol = usuario['rol']
 
