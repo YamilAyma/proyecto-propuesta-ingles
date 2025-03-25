@@ -64,9 +64,10 @@ function guardarDatosUsuario(idForm, rol){
         const formData = new FormData(form);
         const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
         datos.rol = rol
+        agregarUsuario(datos)
 
         localStorage.setItem('usuario', JSON.stringify(datos))
-    //   Redirigir a la vista de acceso
-        reemplazarUrl('cuenta.html')
+        //Redirigir a la vista de acceso
+        // reemplazarUrl('cuenta.html')
     });    
 }

@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
     <script src="script.js" defer></script>
+    <script src="usuario.js"></script>
+    <script src="ofertas.js"></script>
     <script src="utils.js"></script>
     <title>SenaLink</title>
 </head>
@@ -44,15 +46,25 @@
             const id = document.getElementById('id').value
             const contrasena = document.getElementById('password').value
 
-            // Crear el usuario
-            const usuario = {
-                id,
-                contrasena                
+
+            const usuarios = obtenerUsuarios()
+            let usuarioLogeado = {}
+            let valido = false
+            for(let usuario of usuarios){
+                if(usuario.id == id && usuario.contrasena == contrasena){
+                    valido = true
+                    usuarioLogeado = usuario
+                    // Almacenarlo en localStorage
+                    localStorage.setItem('usuario', JSON.stringify(usuario))
+                    // Lo llevo a su pagina personal
+                    reemplazarUrl("cuenta.html")
+                    break
+                }
             }
-            // Almacenarlo en localStorage
-            localStorage.setItem('usuario', JSON.stringify(usuario))
             
-            reemplazarUrl("cuenta.html")
+            if(!valido){
+                alert("Credenciales invalidas")
+            }
         })
 
 

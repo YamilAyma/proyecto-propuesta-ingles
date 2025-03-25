@@ -78,7 +78,6 @@ const ofertasPractica = [
 function setupOfertasPractica(){
     if(!localStorage.getItem("practicas")){
         const mockJSON = JSON.stringify(ofertasPractica);
-        console.log(mockJSON);
         localStorage.setItem('practicas', mockJSON)
     }
 }
