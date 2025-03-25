@@ -68,6 +68,6 @@ function guardarDatosUsuario(idForm, rol){
 
         localStorage.setItem('usuario', JSON.stringify(datos))
         //Redirigir a la vista de acceso
-        // reemplazarUrl('cuenta.html')
+        reemplazarUrl('cuenta.html')
     });    
 }
