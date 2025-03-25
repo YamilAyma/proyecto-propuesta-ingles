@@ -3,18 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputBusqueda = document.getElementById("inputBusqueda");
     const btnBuscar = document.getElementById("btnBuscar");
 
+    
     let ofertasData = []; // Variable global para almacenar los datos del JSON
 
-    // Función para cargar las ofertas desde el JSON
-    async function cargarOfertas() {
-        try {
-            const respuesta = await fetch("ofertas.json");
-            ofertasData = await respuesta.json();
-            mostrarOfertas(ofertasData);
-        } catch (error) {
-            console.error("Error al cargar las ofertas:", error);
-        }
-    }
+    
 
     // Función para mostrar las ofertas filtradas en el HTML
     function mostrarOfertas(ofertas) {

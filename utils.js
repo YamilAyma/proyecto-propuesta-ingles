@@ -1,4 +1,5 @@
 // Estos objetos fueron usados para probar el funcionamiento, son registros del usuario
+// Son el modelos de datos enviados en formularios
 const usuarioMock = {
     id: '101010',
     nombre: "Practicante 01",
@@ -25,6 +26,24 @@ const empresaMock = {
     contrasena: "299291",
     rol: "empresa"
 }
+
+const ofertaPracticaMock = {
+    apellidosMonitor: "Perez Pasteles",
+    cargoMonitor: "Gerente General",
+    carrera: "Tecnología de Procesos de Producción de Prendas de Vestir",
+    convenio: "Convenio de Colaboración Mutua",
+    correoMonitor: "aaa@aaa",
+    descripcion: "Esta es una oferta de trabajo",
+    direccion: "Lima",
+    dniMonitor: "000999888",
+    fechaFin: "2025-09-22",
+    fechaInicio: "2025-03-21",
+    modalidad: "presencial",
+    nVacantes: "2",
+    nombreMonitor: "Mario Pa",
+    telefonoMonitor: "2929292",
+    titulo: "Desarrollador Web"
+};
 
 
 // FUNCIONES AUXILIARES

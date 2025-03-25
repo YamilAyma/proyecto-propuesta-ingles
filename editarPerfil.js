@@ -1,11 +1,4 @@
 // Carga el usuario :: Obj JSON
-// const usuario = JSON.parse(localStorage.getItem('usuario'))
-
-
-
-
-
-
 
 // Obtener el rol para presentar el formulario con los datos cargados
 const rol = usuario['rol']

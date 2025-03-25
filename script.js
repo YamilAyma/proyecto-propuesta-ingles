@@ -1,7 +1,7 @@
 const $ = el=> document.querySelector(el)
 
 
-
+setupOfertasPractica()
 
 
 // POR DEFECTO LA PAGINA FUE ESTABLECIDA EN MODO OSCURO(PREFERENCIA DEL DESARROLLADOR JPFT)

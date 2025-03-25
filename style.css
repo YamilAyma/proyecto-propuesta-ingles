@@ -380,7 +380,7 @@ header{
 /* FORMULARIO */
 
 main{
-    min-height: 90dvh;
+    min-height: 100dvh;
     box-sizing: border-box;
     padding: 1dvh;
     background: linear-gradient(181deg, var(--bk-color1), var(--bk-color2));

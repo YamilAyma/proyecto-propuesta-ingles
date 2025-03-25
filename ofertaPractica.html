@@ -1,0 +1,274 @@
+<!-- 
+ 
+COPIA DE registrar.html, con ello se cargan los datos almacenados en memoria, para
+el usuario, tanto sea ESTUDIANTE/EMPRESA
+
+Este archivo posee su propia funcionalidad por el mismo nombre
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <script src="ofertas.js"></script>
+    <script src="restriccionCuenta.js"></script>
+    <script src="script.js" defer></script>
+    <script src="utils.js"></script>
+    <script src="ofertaPractica.js"></script> <!-- FUNCIONALIDAD -->
+    <title>SenaLink | Publicar oferta de Prácticas</title>
+  </head>
+  <body>
+    <header>
+      <main class="mainIndex">
+        <div class="ctnMainIndex">
+
+          <form action="" class="form" id="formOfertaPractica">
+            <h2 class="tituloForm">Publicar oferta de práctica</h2>
+            <span class="campo">
+              <label for="titulo">Titulo de la oferta</label>
+              <input
+                type="text"
+                name="titulo"
+                id="titulo"
+                required
+                placeholder="Ej: Desarrollador web, Asistente de ventas"
+              />
+            </span>
+            <span class="campo">
+              <label for="descripcion">Descripción</label>
+              <input
+                type="text"
+                name="descripcion"
+                id="descripcion"
+                required
+                placeholder="Información adicional sobre la oferta"
+              />
+            </span>
+
+            
+            <span class="campo">
+                <label for="direccion">Dirección de prácticas </label>
+                <input
+                type="text"
+                name="direccion"
+                id="direccion"
+                required
+                placeholder="Ej: Lima, Independencia, Av.Tupac Amaru "
+                />
+            </span>
+
+            <span class="campo">
+              <label for="fechaInicio">Fecha Inicio  </label>
+              <input
+                type="date"
+                name="fechaInicio"
+                id="fechaInicio"
+                required
+                />
+            </span>
+
+            <span class="campo">
+                <label for="fechaFin">Fecha fin </label>
+              <input
+                type="date"
+                name="fechaFin"
+                id="fechaFin"
+                required
+              />
+            </span>
+
+            <span class="campo">
+              <label for="convenio">Tipo convenio </label>
+              <select name="convenio" id="convenio" required>
+                <option value="Convenio de Colaboración Mutua">Convenio de Colaboración Mutua</option>
+                <option value="Contrato de Aprendizaje Dual">Contrato de Aprendizaje Dual</option>
+                <option value="Aprendices con vínculo laboral en la Empresa">Aprendices con vínculo laboral en la Empresa</option>
+                <option value="Convenio de Aprendizaje con Predominio en la Empresa">Convenio de Aprendizaje con Predominio en la Empresa</option>
+
+              </select>
+            </span>
+
+
+
+            <span class="campo">
+              <label for="modalidad">Modalidad </label>
+                <select name="modalidad" id="modalidad" required>
+                    <option value="presencial">Presencial</option>
+                    <option value="remota">Remota</option>
+                    <option value="hibrida">Hibrida</option>
+                </select>
+            </span>
+
+            <span class="campo">
+              <label for="telefono">Carrera </label>
+              <select name="carrera" id="carrera">
+                <!-- Lista de carreras -->
+                <option value="Administración Industrial">Administración Industrial</option>
+                <option value="Seguridad Industrial y Prevención de Riesgos">Seguridad Industrial y Prevención de Riesgos</option>
+                <option value="Administración Logística">Administración Logística</option>
+                <option value="Administración de Empresas">Administración de Empresas</option>
+                <option value="Marketing y Gestión Comercial">Marketing y Gestión Comercial</option>
+                <option value="Administración de Negocios Internacionales">Administración de Negocios Internacionales</option>
+                <option value="Administración Turística (Nueva)">Administración Turística (Nueva)</option>
+                <option value="Trade Marketing y Visual Merchandising (nueva)">Trade Marketing y Visual Merchandising (nueva)</option>
+                <option value="Agroindustria">Agroindustria</option>
+                <option value="Diseño Gráfico">Diseño Gráfico</option>
+                <option value="Producción Gráfica">Producción Gráfica</option>
+                <option value="DISEÑO Y PRODUCCIÓN DE ANIMACIÓN DIGITAL">DISEÑO Y PRODUCCIÓN DE ANIMACIÓN DIGITAL</option>
+                <option value="Confeccionista de Prendas de Vestir">Confeccionista de Prendas de Vestir</option>
+                <option value="Tecnología de Procesos de Producción de Prendas de Vestir">Tecnología de Procesos de Producción de Prendas de Vestir</option>
+                <option value="Diseño y Gestión de Moda">Diseño y Gestión de Moda</option>
+                <option value="Mecatrónica en la Industria de la Moda">Mecatrónica en la Industria de la Moda</option>
+                <option value="INSTRUMENTACIÓN Y CONTROL DE PROCESOS INDUSTRIALES">INSTRUMENTACIÓN Y CONTROL DE PROCESOS INDUSTRIALES</option>
+                <option value="Mecatrónica Industrial">Mecatrónica Industrial</option>
+                <option value="ELECTRÓNICA Y AUTOMATIZACIÓN INDUSTRIAL">ELECTRÓNICA Y AUTOMATIZACIÓN INDUSTRIAL</option>
+                <option value="ELECTRICIDAD INDUSTRIAL">ELECTRICIDAD INDUSTRIAL</option>
+                <option value="ELECTROTECNIA INDUSTRIAL Y ENERGÍAS RENOVABLES">ELECTROTECNIA INDUSTRIAL Y ENERGÍAS RENOVABLES</option>
+                <option value="Climatización y refrigeración en edificaciones (Nueva)">Climatización y refrigeración en edificaciones (Nueva)</option>
+                <option value="Climatización y Refrigeración Industrial (Nueva)">Climatización y Refrigeración Industrial (Nueva)</option>
+                <option value="Guía Oficial de Turismo">Guía Oficial de Turismo</option>
+                <option value="Procesamiento Industrial de Alimentos">Procesamiento Industrial de Alimentos</option>
+                <option value="Cocina Peruana e Internacional">Cocina Peruana e Internacional</option>
+                <option value="CONTROL DE CALIDAD Y PROCESOS EN LA INDUSTRIA ALIMENTARIA">CONTROL DE CALIDAD Y PROCESOS EN LA INDUSTRIA ALIMENTARIA</option>
+                <option value="OPERACIONES INDUSTRIALES DE ALIMENTOS Y BEBIDAS">OPERACIONES INDUSTRIALES DE ALIMENTOS Y BEBIDAS</option>
+                <option value="Procesos de la Industria Alimentaria y Productos Hidrobiológicos">Procesos de la Industria Alimentaria y Productos Hidrobiológicos</option>
+                <option value="Panadería y Pastelería (Nueva)">Panadería y Pastelería (Nueva)</option>
+                <option value="Mecánico Automotriz">Mecánico Automotriz</option>
+                <option value="Mecatrónica de Motores Diesel">Mecatrónica de Motores Diesel</option>
+                <option value="Mecánico de Maquinaria Pesada">Mecánico de Maquinaria Pesada</option>
+                <option value="Mecatrónica Automotriz">Mecatrónica Automotriz</option>
+                <option value="Mecatrónica de Buses y Camiones">Mecatrónica de Buses y Camiones</option>
+                <option value="Mantenimiento de Maquinaria Pesada para Construcción">Mantenimiento de Maquinaria Pesada para Construcción</option>
+                <option value="Mecatrónica de Maquinaria Agrícola">Mecatrónica de Maquinaria Agrícola</option>
+                <option value="Mantenimiento de Maquinaria Pesada">Mantenimiento de Maquinaria Pesada</option>
+                <option value="Mecánica de motores y vehículos menores (Nueva)">Mecánica de motores y vehículos menores (Nueva)</option>
+                <option value="Mecánica de Producción">Mecánica de Producción</option>
+                <option value="Mecánico de Construcciones Metálicas">Mecánico de Construcciones Metálicas</option>
+                <option value="Soldador Universal">Soldador Universal</option>
+                <option value="Mecatrónica de Fabricación Metalmecánica">Mecatrónica de Fabricación Metalmecánica</option>
+                <option value="Diseño y Desarrollo de Máquinas">Diseño y Desarrollo de Máquinas</option>
+                <option value="PROCESOS TECNOLÓGICOS DE SOLDADURA">PROCESOS TECNOLÓGICOS DE SOLDADURA</option>
+                <option value="ESTRUCTURAS Y CONSTRUCCIONES METÁLICAS">ESTRUCTURAS Y CONSTRUCCIONES METÁLICAS</option>
+                <option value="Procesos de la Industria del Plástico (Nueva)">Procesos de la Industria del Plástico (Nueva)</option>
+                <option value="Mecánico de Mantenimiento">Mecánico de Mantenimiento</option>
+                <option value="Mantenimiento de Plantas Industriales">Mantenimiento de Plantas Industriales</option>
+                <option value="Química Industrial">Química Industrial</option>
+                <option value="Tecnologías Ambientales">Tecnologías Ambientales</option>
+                <option value="Desarrollo de Software">Desarrollo de Software</option>
+                <option value="Soporte y Mantenimiento de Equipos de Computación">Soporte y Mantenimiento de Equipos de Computación</option>
+                <option value="Diseño Gráfico Digital">Diseño Gráfico Digital</option>
+                <option value="Redes y Seguridad Informática">Redes y Seguridad Informática</option>
+                <option value="Ingenieria de Software con Inteligencia Artificial">Ingenieria de Software con Inteligencia Artificial</option>
+                <option value="Ingeniería de Ciberseguridad">Ingeniería de Ciberseguridad</option>
+                <option value="DISEÑO Y DESARROLLO DE VIDEOJUEGOS Y REALIDAD AUMENTADA">DISEÑO Y DESARROLLO DE VIDEOJUEGOS Y REALIDAD AUMENTADA</option>
+                <option value="INGENIERÍA DE SOPORTE DE TI">INGENIERÍA DE SOPORTE DE TI</option>
+                <option value="INGENIERÍA DE CLOUD COMPUTING Y DATA CENTER">INGENIERÍA DE CLOUD COMPUTING Y DATA CENTER</option>
+                <option value="Informática y Desarrollo de aplicaciones web">Informática y Desarrollo de aplicaciones web</option>
+                <option value="Diseño de Estructuras Metálicas y Modelamiento BIM">Diseño de Estructuras Metálicas y Modelamiento BIM</option>
+                <option value="PROCESOS DE PRODUCCIÓN TEXTIL">PROCESOS DE PRODUCCIÓN TEXTIL</option>
+                <option value="MECATRÓNICA TEXTIL">MECATRÓNICA TEXTIL</option>
+                <option value="ANALISTA DE CALIDAD TEXTIL">ANALISTA DE CALIDAD TEXTIL</option>
+                <option value="DISEÑO Y DESARROLLO TEXTIL (Nueva)">DISEÑO Y DESARROLLO TEXTIL (Nueva)</option>
+                <option value="TINTORERÍA Y ACABADOS TEXTILES (Nueva)">TINTORERÍA Y ACABADOS TEXTILES (Nueva)</option>
+                <option value="DISEÑO Y GESTIÓN EN JOYERÍA">DISEÑO Y GESTIÓN EN JOYERÍA</option>
+                <option value="Ingeniería de Tecnologías de la Información y Comunicación">Ingeniería de Tecnologías de la Información y Comunicación</option>
+              </select>
+            </span>
+
+            <span class="campo">
+              <label for="nVacantes">Numero de vacantes </label>
+              <input
+                type="number"
+                name="nVacantes"
+                id="nVacantes"
+                required
+                placeholder="Minimo 1"
+              />
+            </span>
+
+            <div class="form">
+                <svg width="50px" height="auto" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 789.333333l-106.666667-128v-128h213.333334v128z" fill="#FF9800"></path><path d="M704 405.333333m-42.666667 0a42.666667 42.666667 0 1 0 85.333334 0 42.666667 42.666667 0 1 0-85.333334 0Z" fill="#FFA726"></path><path d="M320 405.333333m-42.666667 0a42.666667 42.666667 0 1 0 85.333334 0 42.666667 42.666667 0 1 0-85.333334 0Z" fill="#FFA726"></path><path d="M704 277.333333c0-162.133333-384-106.666667-384 0v149.333334c0 106.666667 85.333333 192 192 192s192-85.333333 192-192v-149.333334z" fill="#FFB74D"></path><path d="M512 85.333333c-130.133333 0-213.333333 104.533333-213.333333 234.666667v49.066667l42.666666 36.266666v-106.666666l256-85.333334 85.333334 85.333334v106.666666l42.666666-36.266666V320c0-85.333333-21.333333-170.666667-128-192l-21.333333-42.666667h-64z" fill="#424242"></path><path d="M597.333333 405.333333m-21.333333 0a21.333333 21.333333 0 1 0 42.666667 0 21.333333 21.333333 0 1 0-42.666667 0Z" fill="#784719"></path><path d="M426.666667 405.333333m-21.333334 0a21.333333 21.333333 0 1 0 42.666667 0 21.333333 21.333333 0 1 0-42.666667 0Z" fill="#784719"></path><path d="M512 917.333333l-106.666667-256 106.666667 21.333334 106.666667-21.333334z" fill="#FFFFFF"></path><path d="M490.666667 746.666667l-14.933334 96 36.266667 85.333333 36.266667-85.333333L533.333333 746.666667l21.333334-21.333334-42.666667-42.666666-42.666667 42.666666z" fill="#D32F2F"></path><path d="M618.666667 661.333333l-106.666667 256-106.666667-256S170.666667 704 170.666667 938.666667h682.666666c0-234.666667-234.666667-277.333333-234.666666-277.333334z" fill="#546E7A"></path></g></svg>
+                <h2>Datos acerca del monitor a cargo</h2>
+
+                <span class="campo">
+                    <label for="dniMonitor">DNI del monitor</label>
+                    <input
+                        type="text"
+                        name="dniMonitor"
+                        id="dniMonitor"
+                        required
+                        placeholder="Ingrese DNI del monitor"
+                    />
+                </span>
+
+                <span class="campo">
+                <label for="nombreMonitor">Nombre del monitor</label>
+                <input
+                    type="text"
+                    name="nombreMonitor"
+                    id="nombreMonitor"
+                    required
+                    placeholder="Ingrese nombre del monitor"
+                />
+                </span>
+            
+                <span class="campo">
+                    <label for="apellidosMonitor">Apellidos del monitor</label>
+                    <input
+                        type="text"
+                        name="apellidosMonitor"
+                        id="apellidosMonitor"
+                        required
+                        placeholder="Ingrese apellidos del monitor"
+                    />
+                </span>
+
+                <span class="campo">
+                    <label for="correoMonitor">Correo del monitor</label>
+                    <input
+                        type="text"
+                        name="correoMonitor"
+                        id="correoMonitor"
+                        required
+                        placeholder="Ingrese correo del monitor"
+                    />
+                </span>
+                
+                
+                <span class="campo">
+                    <label for="telefonoMonitor">Telefono del monitor</label>
+                    <input
+                        type="text"
+                        name="telefonoMonitor"
+                        id="telefonoMonitor"
+                        required
+                        placeholder="Ingrese telefono del monitor"
+                    />
+                </span>
+
+                <span class="campo">
+                    <label for="cargoMonitor">Cargo del monitor</label>
+                    <input
+                        type="text"
+                        name="cargoMonitor"
+                        id="cargoMonitor"
+                        required
+                        placeholder="Ingrese cargo del monitor"
+                    />
+                </span>
+                
+            </div>
+
+            <div class="buttons">
+              <button class="btnIngresar" onclick="('formEmpresa', 'empresa')">Guardar datos</button>
+              <a class="btnSalir" href="index.html">Salir</a>
+            </div>
+          </form>
+        </div>
+      </main>
+    </header>
+  </body>
+</html>

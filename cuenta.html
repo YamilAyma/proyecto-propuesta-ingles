@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="utils.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">        
         <script src="utils.js"></script>    
+        <script src="ofertas.js"></script>
         <script src="script.js"></script>
         <script src="cuenta.js"></script>
         <title>SenaLink</title>
@@ -26,9 +27,6 @@
                     <li class="itemListaNav">
                         <a href="index.html" class="itemListaNav">Home</a>
                     </li>
-                    <li class="itemListaNav sin-login">
-                        <a href="login.html" class="itemListaNav ">Login</a>
-                    </li> 
                     <li class="itemListaNav sin-login">
                         <a href="registrar.html" class="itemListaNav ">Registrarse</a>
                     </li>
@@ -55,8 +53,9 @@
                         <p class="cuentaUsuarioUbicacion"></p>
                     </span>
                     <span class="btnOpcionesCuentas">
-                        <p onclick="reemplazarUrl('editarPerfil.html')">Configuraciones</p>
-                        <p onclick="cerrarSesion()">Cerrar Sesion</p>
+                        <p onclick="reemplazarUrl('editarPerfil.html')">Editar Perfil</p>
+                        <p id="ofertaPractica" onclick="reemplazarUrl('ofertaPractica.html')">Publicar oferta de prácticas</p>
+                        <p onclick="cerrarSesion()">Cerrar Sesión</p>
                     </span>
                 </section>
                 <section class="ctnRegistros">

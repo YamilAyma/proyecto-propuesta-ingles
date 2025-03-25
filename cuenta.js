@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded",()=> {
     const correoUsuario = document.querySelector('.cuentaUsuarioCorreo');
     const telefonoUsuario = document.querySelector('.cuentaUsuarioTelefono');
     const ubicacionUsuario = document.querySelector('.cuentaUsuarioUbicacion');
+
+    if(usuario.rol == "practicante"){
+        document.querySelector("#ofertaPractica").classList.add('invisible')        
+    }else{
+        document.querySelector("#ofertaPractica").classList.remove('invisible')        
+    }
     
     // Ejemplo de modificación
     // Uso de operador ??
