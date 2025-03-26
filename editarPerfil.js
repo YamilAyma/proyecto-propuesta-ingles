@@ -15,7 +15,7 @@ if(rol == "practicante"){
     const nombreInput = document.getElementById("nombre");
     const apellidoInput = document.getElementById("apellidos");
     const telefonoInput = document.getElementById("telefono");
-    const idCarreraInput = document.getElementById("idCarrera");
+    const idCarreraInput = document.getElementById("carrera");
     const sedeInput = document.getElementById("sede");
     const emailInput = document.getElementById("correo");
     const passwordInput = document.getElementById("contrasena");
@@ -27,7 +27,7 @@ if(rol == "practicante"){
     nombreInput.value = usuario.nombre;
     apellidoInput.value = usuario.apellidos;
     telefonoInput.value = usuario.telefono;
-    idCarreraInput.value = usuario.idCarrera;
+    idCarreraInput.value = usuario.carrera;
     sedeInput.value = usuario.sede;
     emailInput.value = usuario.correo;
     passwordInput.value = usuario.contrasena;

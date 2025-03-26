@@ -387,6 +387,10 @@ main{
     
 }
 
+/* PARA EL BUSCADO */
+#inputBusqueda::placeholder{
+    color: white;
+}
 
 .boxElegir{
     display: flex;

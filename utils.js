@@ -45,8 +45,15 @@ const ofertaPracticaMock = {
     titulo: "Desarrollador Web"
 };
 
-
 // FUNCIONES AUXILIARES
+// Objeto global para identificar que oferta está eligiendo el usuario.
+let ofertaPostular
+if(!ofertaPostular){
+    ofertaPostular = {}    
+}
+
+
+
 function reemplazarUrl(nueva_ruta){
     let rutaActual = window.location.href;
     // Dividir la ruta
@@ -54,6 +61,11 @@ function reemplazarUrl(nueva_ruta){
     window.location = r 
 
 }
+
+function obtenrUsuarioLogeado(){
+    return JSON.parse(localStorage.getItem('usuario'))
+}
+
 
 function guardarDatosUsuario(idForm, rol){
     const form = document.getElementById(idForm);

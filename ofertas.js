@@ -22,7 +22,7 @@ const ofertasPractica = [
     {
         apellidosMonitor: "García López",
         cargoMonitor: "Coordinador de Tecnología",
-        carrera: "Ingeniería de Software",
+        carrera: "Ingenieria de Software con Inteligencia Artificial",
         convenio: "Convenio de Colaboración Mutua",
         correoMonitor: "garcia@empresa.com",
         descripcion: "Desarrollo y mantenimiento de aplicaciones web.",
@@ -74,6 +74,23 @@ const ofertasPractica = [
         estado: "Activo"
     }
 ];
+// Redigirá a la página para conocer más sobre la oferta y con el botón disponible para ello
+function postularOferta(ofertaObj){
+    localStorage.setItem('ofertaPostular', JSON.stringify(ofertaObj))
+    // Lo redirijo para que pueda acceder a más información
+    reemplazarUrl("postular.html")
+}
+
+function obtenerOfertaPostulada(){
+    return JSON.parse(localStorage.getItem('ofertaPostular'))
+}
+
+function setupOfertaPostulacion(){
+    if(!localStorage.getItem("ofertaPostular")){
+        const mockJSON = JSON.stringify({});
+        localStorage.setItem('ofertaPostular', mockJSON)
+    }
+}
 
 function setupOfertasPractica(){
     if(!localStorage.getItem("practicas")){
@@ -88,4 +105,8 @@ function actualizarOfertasPractica(nuevaOferta){
     
     practicasMemoria.push(nuevaOferta)
     localStorage.setItem('practicas', JSON.stringify(practicasMemoria))
+}
+// Las ofertas de practicas son un array de objetos
+function obtenerOfertasPracticas(){
+    return JSON.parse(localStorage.getItem('practicas'))
 }

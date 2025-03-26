@@ -3,6 +3,7 @@ const $ = el=> document.querySelector(el)
 
 setupOfertasPractica()
 setupUsuarios()
+setupOfertaPostulacion()
 
 
 // POR DEFECTO LA PAGINA FUE ESTABLECIDA EN MODO OSCURO(PREFERENCIA DEL DESARROLLADOR JPFT)
