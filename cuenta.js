@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded",()=> {
 
 
 
+
     // Función para mostrar las ofertas filtradas en el HTML
     function mostrarOfertas() {
         contenedorOfertas.innerHTML = ""; // Limpiar el contenedor antes de agregar nuevas ofertas
@@ -22,10 +23,18 @@ document.addEventListener("DOMContentLoaded",()=> {
             return;
         }
 
+        // Filtra las ofertas según el rol del usuario
+        let ofertasFiltradas;
+        // Para practicantes: Por carrera
+        if(usuarioLogeado.rol == "practicante"){
+            ofertasFiltradas = ofertasPublicadas.filter((oferta)=> oferta.carrera == usuarioLogeado.carrera)
+        }else{
+            // Para empresa: Por creación
+            ofertasFiltradas = ofertasPublicadas.filter((oferta) => oferta.empresa == usuarioLogeado.razonSocial)
+        }
+        console.log(ofertasFiltradas)
+
         // Crear las vistas previas para todas las ofertas según la carrera
-        const ofertasFiltradasPorCarrera = ofertasPublicadas.filter((oferta)=> oferta.carrera == usuarioLogeado.carrera)
-        console.log(ofertasFiltradasPorCarrera)
-        console.log(usuarioLogeado.carrera)
 
         // Agregar buscador
         contenedorOfertas.innerHTML = `<span class="buscador">
@@ -34,7 +43,8 @@ document.addEventListener("DOMContentLoaded",()=> {
                             <span class="material-symbols-outlined">search</span>
                         </button>
                     </span>`
-        ofertasFiltradasPorCarrera.forEach(oferta => {
+
+        ofertasFiltradas.forEach(oferta => {
             const ofertaHTML = `
                 <section class="ctnOfeta">
                     <span class="blockOferta1">
@@ -97,7 +107,7 @@ document.addEventListener("DOMContentLoaded",()=> {
                     <hr>
                     <span class="blockOferta2">
                         <p class="ofertaFecha">Fecha de inicio: ${oferta.fechaInicio} - Fecha de fin: ${oferta.fechaFin}</p>
-                        <p class="ofertaCarrera"> ${oferta.carrera}</p>                        
+                        <p class="ofertaCarrera">  ${oferta.carrera}</p>                        
                     </span>
                     <span class="blockOferta3">
                         <p class="ofertaDescripcion">${oferta.descripcion}</p>

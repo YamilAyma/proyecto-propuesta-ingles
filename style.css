@@ -670,6 +670,23 @@ hr{
     gap: 1dvh;
 }
 
+#botonPdf{
+    position: absolute;
+    z-index: 100;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all ease-in-out .5s;
+}
+#botonPdf:hover{
+    scale: 1.2;
+    transform: rotate(-35deg);
+}
+
 .ofertaBtnPostularse{
     padding: 1dvh;
     border-radius: 10px;
@@ -677,8 +694,8 @@ hr{
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
-    background-color: var(--bk-color3);
-    color: var(--text-color1);
+    background-color: var(--blanco-azul);
+    color: var(--azul-blanco);
     transition: all .3s ease-in-out;
 }
 .ofertaBtnPostularse:hover{

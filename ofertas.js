@@ -35,7 +35,8 @@ const ofertasPractica = [
         nombreMonitor: "Carlos García",
         telefonoMonitor: "987654321",
         titulo: "Desarrollador Web",
-        estado: "Activo"
+        estado: "Activo",
+        empresa: "Flores y Tech"
     },
     {
         apellidosMonitor: "Fernández Ruiz",
@@ -53,7 +54,8 @@ const ofertasPractica = [
         nombreMonitor: "Lucía Fernández",
         telefonoMonitor: "945678321",
         titulo: "Analista de Datos",
-        estado: "Activo"
+        estado: "Activo",
+        empresa: "Flores y Tech"
     },
     {
         apellidosMonitor: "Ramos Díaz",
@@ -71,7 +73,8 @@ const ofertasPractica = [
         nombreMonitor: "Andrea Ramos",
         telefonoMonitor: "956874123",
         titulo: "Diseñador UX/UI",
-        estado: "Activo"
+        estado: "Activo",
+        empresa: "EcoVerde"
     }
 ];
 // Redigirá a la página para conocer más sobre la oferta y con el botón disponible para ello

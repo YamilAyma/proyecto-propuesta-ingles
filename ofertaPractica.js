@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const formData = new FormData(form);
         const datos = Object.fromEntries(formData.entries()); // Convierte FormData en un objeto
 
+        // Añadir descriptivo de que empresa es
+        const usuarioLogeado = JSON.parse(localStorage.getItem('usuario'))
+        datos.empresa = usuarioLogeado.razonSocial
+        datos.estado = "Activo"
+
         actualizarOfertasPractica(datos)
         // Redirigir a la vista de acceso
         alert("Oferta publicada ✅")
