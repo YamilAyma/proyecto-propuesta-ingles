@@ -90,11 +90,13 @@ body{
 }
 
 .glass{
-    backdrop-filter: blur(21px) saturate(200%);
-    -webkit-backdrop-filter: blur(21px) saturate(200%);
-    background-color: rgba(133, 170, 241, 0.39);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
@@ -588,6 +590,7 @@ input[type='file']{
 
 .buscador{
     display: flex;
+    width: 99%;
     text-align: center;
     margin: 0 2dvh;
     padding: 1dvh;
@@ -776,17 +779,12 @@ hr{
 
 .ctnRegistros{
     width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 5dvh;
     height: 78dvh;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+
     
     border-radius: 15px;
     box-sizing: border-box;
