@@ -27,7 +27,13 @@ document.addEventListener("DOMContentLoaded",()=> {
         console.log(ofertasFiltradasPorCarrera)
         console.log(usuarioLogeado.carrera)
 
-
+        // Agregar buscador
+        contenedorOfertas.innerHTML = `<span class="buscador">
+                        <input type="text" id="inputBusqueda" class="inputBuscador" placeholder="Buscar por ciudad o carrera">
+                        <button id="btnBuscar" class="btnBuscador">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </span>`
         ofertasFiltradasPorCarrera.forEach(oferta => {
             const ofertaHTML = `
                 <section class="ctnOfeta">
